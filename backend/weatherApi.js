@@ -19,15 +19,18 @@ export default function getWeatherInfo(city, callback) {
 
     "current"
     - Ultima atualização
-    - Temperatura em Celsius
-    - É dia/noite
     - "condition"
         Texto (parcialmente nublado)
         Ícone
+        
+    - Temperatura em Celsius
+    - Sensação térmica
+    - É dia/noite
+
+
     - Velocidade do vento *
     - Direção do vendo *
     - Precipitação
     - Umidade
     - Raios UV
-    - Sensação térmica
 */

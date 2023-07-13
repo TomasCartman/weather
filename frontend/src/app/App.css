@@ -1,3 +1,42 @@
 body {
-  background-color: #000;
+  background-color: #31378fee;
+  color: white;
+}
+
+.main {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 4fr 5fr;
+  grid-template-rows: 3fr 2fr;
+  grid-template-areas:
+    'wrapped-content1 wrapped-place'
+    'wrapped-content2 wrapped-content3';
+
+}
+
+.wrapped-content1 {
+  grid-area: wrapped-content1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-right: 40px;
+}
+
+.wrapped-content2 {
+  grid-area: wrapped-content2;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  margin-right: 40px;
+}
+
+.wrapped-content3 {
+  grid-area: wrapped-content3;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.wrapped-place {
+  grid-area: wrapped-place;
 }

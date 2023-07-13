@@ -1,0 +1,22 @@
+.item-box {
+    display: flex;
+    padding: 0px;
+}
+
+.item-box:first-child {
+    padding: 5px 0px 0px 0px;
+}
+
+.item-box:last-child {
+    padding: 0px 0px 5px 0px;
+}
+
+.item-label {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 1.4rem;
+}
+
+.item {
+    font-size: 1.4rem;
+}

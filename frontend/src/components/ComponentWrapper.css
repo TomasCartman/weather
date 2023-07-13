@@ -1,0 +1,14 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    height: fit-content;
+    padding: 40px;
+    margin: 20px;
+    border: solid 1px #eeeeee6b;
+    border-radius: 20px;
+    background-color: #5DACFE;
+    background-color: #8388ca;
+    color: #fff;
+    box-shadow: 2px 2px 10px #00000056;
+}
