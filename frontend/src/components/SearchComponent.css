@@ -1,0 +1,32 @@
+.search-component {
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    border: solid 1px #8388CA;
+    background-color: #8388CA;
+    height: 40px;
+}
+
+#search {
+    flex: 1;
+    width: 400px;
+    height: 100%;
+    border: none;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: #8388CA;
+    color: #fff;
+    font-size: 1.1rem;
+}
+
+#search:focus {
+    outline: solid 1px white;
+}
+
+.icon {
+    padding: 8px;
+}
+
+.icon:hover {
+    color: #aaa;
+}

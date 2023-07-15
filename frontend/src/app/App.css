@@ -6,10 +6,11 @@ body {
 .main {
   height: 100%;
   display: grid;
-  grid-template-columns: 4fr 5fr;
-  grid-template-rows: 3fr 2fr;
+  grid-template-columns: 9fr 10fr;
+  grid-template-rows: 70px 3fr 2fr;
   grid-template-areas:
-    'wrapped-content1 wrapped-place'
+    'navbar navbar'
+    'wrapped-content1 wrapped-content4'
     'wrapped-content2 wrapped-content3';
 
 }
@@ -37,6 +38,14 @@ body {
   align-items: flex-start;
 }
 
-.wrapped-place {
-  grid-area: wrapped-place;
+.wrapped-content4 {
+  grid-area: wrapped-content4;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 80px;
+}
+
+.navbar {
+  grid-area: navbar;
 }
