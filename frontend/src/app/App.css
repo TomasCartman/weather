@@ -55,3 +55,38 @@ body {
   height: 40px;
   margin-right: 10px;
 }
+
+@media (max-width: 1100px) {
+    .main {
+      grid-template-columns: 1fr;
+      grid-template-areas: 
+        'navbar'
+        'wrapped-content4'
+        'wrapped-content3'
+        'wrapped-content2'
+        'wrapped-content1';
+    }
+
+    .wrapped-content1 {
+      justify-content: center;
+      align-items: center;
+      margin: 0px;
+    }
+
+    .wrapped-content2 {
+      justify-content: center;
+      align-items: center;
+      margin: 0px;
+    }
+
+    .wrapped-content3 {
+      justify-content: center;
+      align-items: center;
+    }
+
+    .wrapped-content4 {
+      justify-content: center;
+      align-items: center;
+      margin: 20px 0px;
+    }
+}
