@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import weatherApi from '../repository/repository'
-import useSearchCity from './useSearchCity'
 
 const mockResponse = {
     "location": {
@@ -14,7 +13,8 @@ const mockResponse = {
         "is_day": 1,
         "condition": {
             "text": "Sol",
-            "code": 1000
+            "code": 1000,
+            "icon": "//cdn.weatherapi.com/weather/64x64/day/116.png"
         },
         "wind_kph": 13.0,
         "wind_dir": "W",

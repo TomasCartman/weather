@@ -14,15 +14,20 @@ import LocalizationText from '../components/LocalizationText'
 import NavBar from '../components/NavBar'
 import useSearchCity from '../hooks/useSearchCity'
 import useCityData from '../hooks/useCityData'
+import { useEffect } from 'react'
 
 export default function App() {
   const { cityData, getCityData } = useCityData()
   const { searchCity, setOnChange } = useSearchCity()
 
+  const getIcon = () => cityData.current.condition.icon
+  
+  useEffect(() => getCityData('Sao Paulo'), [])
+
   return (
     <div className='main'>
-      <NavBar 
-        className='navbar' 
+      <NavBar
+        className='navbar'
         searchOnClick={getCityData}
         searchCity={searchCity}
         searchOnChange={setOnChange}
@@ -83,8 +88,9 @@ export default function App() {
           <MdOutlineWatchLater size={35} />
         </LineItemWeather>
         <LineItemWeather
-          label='ICON'
+          icon
           item={cityData?.current?.condition.text}>
+            <img className='img' src={getIcon()} alt='Weather' />
         </LineItemWeather>
       </ComponentWrapper>
     </div>
