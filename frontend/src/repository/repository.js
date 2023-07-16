@@ -1,5 +1,5 @@
-import weatherApi from '../../../backend/weatherApi'
+import weatherApi from './weatherApi'
 
 export default function getWeatherInfoByCity(cityName, callback) {
-    weatherApi(cityName, callback)
+    return weatherApi(cityName, callback)
 }
