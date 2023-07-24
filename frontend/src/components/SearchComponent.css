@@ -23,6 +23,11 @@
     outline: solid 1px white;
 }
 
+#search::placeholder {
+    color: #C7C7C7;
+    font-style: italic;
+}
+
 .icon {
     padding: 8px;
     cursor: pointer;

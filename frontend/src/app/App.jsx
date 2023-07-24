@@ -22,7 +22,7 @@ export default function App() {
 
   const getIcon = () => cityData.current.condition.icon
   
-  useEffect(() => getCityData('Sao Paulo'), [])
+  useEffect(() => getCityData('Fortaleza'), [])
 
   return (
     <div className='main'>
